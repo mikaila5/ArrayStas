@@ -34,13 +34,13 @@ public class ArrayStas
 		
 		int stop3 = 61;
 		int value3 = Arrays.binarySearch(array , stop3);
-		int value3prime = (value3 - value2 - value1);
+		int value3prime = (value3 - value2);
 		
 		int stop4 = 81;
 		int value4 = Arrays.binarySearch(array , stop4);
-		int value4prime = (value4 - value3 - value2 -value1);
+		int value4prime = (value4 - value3);
 		
-		int value5 = (300 - value4prime);
+		int value5 = (300 - value4);
 		
 		
 		

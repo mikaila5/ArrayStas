@@ -23,14 +23,24 @@ public class ArrayStas
 		System.out.println(array[i]);
 		}
 		
-		//This initializes some values for the 
+		//This initializes some values for the method that makes the bar chart
+		//and counts the number of occurrences of numbers in the various ranges 
 		int stop1 = 21;
 		int value1 = Arrays.binarySearch(array , stop1);
+		
 		int stop2 = 41;
 		int value2 = Arrays.binarySearch(array , stop2);
-		int value12 = (value2-value1);
+		int value2prime = (value2-value1);
 		
+		int stop3 = 61;
+		int value3 = Arrays.binarySearch(array , stop3);
+		int value3prime = (value3 - value2 - value1);
 		
+		int stop4 = 81;
+		int value4 = Arrays.binarySearch(array , stop4);
+		int value4prime = (value4 - value3 - value2 -value1);
+		
+		int value5 = (300 - value4prime);
 		
 		
 		
@@ -58,7 +68,7 @@ public class ArrayStas
 		 System.out.print("*");
 	 }
 	 }
-	 System.out.print("  " + (value12));
+	 System.out.print("  " + (value2prime));
 	 
 	 //This prints out bar chart for 41-60
 	 System.out.println();
@@ -70,6 +80,7 @@ public class ArrayStas
 		 System.out.print("*");
 	 }
 	 }
+	  System.out.print("  " + (value3prime));
 	 
 	 //This prints out bar chart for 61-80
 	 System.out.println();
@@ -81,6 +92,7 @@ public class ArrayStas
 		 System.out.print("*");
 	 }
 	 }
+	 System.out.print("  " + (value4prime));
 	 
 	//This prints out bar chart for 81-100
 		 System.out.println();
@@ -92,6 +104,7 @@ public class ArrayStas
 			 System.out.print("*");
 		 }
 		 }
+		 System.out.print("  " + (value5));
 	}
 	
 	
